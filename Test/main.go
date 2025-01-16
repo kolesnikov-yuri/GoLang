@@ -125,25 +125,47 @@
 
 //задача M //////////////////////////////////////
 
+// package main
+
+// import "fmt"
+
+// func main() {
+
+// 	var (
+// 		check_1,
+// 		check_2,
+// 		check_3 string
+// 	)
+// 	fmt.Scan(&check_1, &check_2, &check_3)
+
+// 	if (check_1 == "раз" || check_1 == "один") && check_2 == "два" && check_3 == "три" {
+// 		fmt.Printf("ОК")
+// 	} else if check_1 == "1" && check_2 == "2" && check_3 == "3" {
+// 		fmt.Printf("ОК")
+// 	} else {
+// 		fmt.Printf("НЕ ПРАВИЛЬНО")
+// 	}
+// }
+
+//задача N //////////////////////////////////////
+
 package main
 
 import "fmt"
 
+var (
+	X_1,
+	Y_1,
+	X_2,
+	Y_2 int
+)
+
 func main() {
 
-	var (
-		check_1,
-		check_2,
-		check_3 string
-	)
-	fmt.Scan(&check_1, &check_2, &check_3)
+	fmt.Scan(&X_1, &Y_1, &X_2, &Y_2)
 
-	if (check_1 == "раз" || check_1 == "один") && check_2 == "два" && check_3 == "три" {
-		fmt.Printf("ОК")
-	} else if check_1 == "1" && check_2 == "2" && check_3 == "3" {
-		fmt.Printf("ОК")
-	} else {
-		fmt.Printf("НЕ ПРАВИЛЬНО")
-	}
-
+	fmt.Println(X_1,
+		Y_1,
+		X_2,
+		Y_2)
 }
