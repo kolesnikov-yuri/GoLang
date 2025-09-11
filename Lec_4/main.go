@@ -10,7 +10,8 @@ import (
 func main() {
 	//Boolean => default false
 	var firstBoolean bool
-	fmt.Println(firstBoolean)
+	fmt.Println(firstBoolean) // fals (по умолчанию fals)
+
 	//Boolean operands
 	aBoolean, bBoolean := true, false
 	fmt.Println("AND:", aBoolean && bBoolean) // fals
@@ -24,8 +25,10 @@ func main() {
 	b := 92
 	fmt.Println("Value of a:", a, "Value of b:", b, "Sum of a+b:", a+b)
 	// Value of a: 32 Value of b: 92 Sum of a+b: 124
+
 	//Вывод типа через %T форматирование
 	fmt.Printf("Type is %T\n", a) // Type is int
+
 	//Узнаем, сколько байт занимает переемнная типа int
 	fmt.Printf("Type %T size of %d bytes\n", a, unsafe.Sizeof(a))
 	// Type int size of 8 bytes
@@ -46,14 +49,19 @@ func main() {
 	// над int и intX , то обязательно нужно использовать механизм приведения. Т.к. int != int64
 	var third64 int64 = 16123414
 	var fourthInt int = 156234
+
+	//fmt.Println(third64 + fourthInt) // ошибка
+
 	fmt.Println(third64 + int64(fourthInt)) //16279648
 
 	// Аналогичным образом утсроены unit8, uint16, uint32, uint64, uint
+
 	//Numerics. Float
 	//float32, float64
 	floatFirst, floatSecond := 5.67, 12.54
 	fmt.Printf("type of a %T and type of b %T\n", floatFirst, floatSecond)
 	// type of a float64 and type of b float64
+
 	sum := floatFirst + floatSecond
 	sub := floatFirst - floatSecond
 	fmt.Println("Sum:", sum, "Sub:", sub)           // Sum: 18.21 and Sub: -6.8699999999999

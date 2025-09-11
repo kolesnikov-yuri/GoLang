@@ -22,10 +22,11 @@ func main() {
 	fmt.Scan(&value)
 
 	if value%2 == 0 {
-		fmt.Println("The number", value, "is even")
+		fmt.Println("The number", value, "is even") // The number 4 is even
 	} else {
-		fmt.Println("The number", value, "is odd")
+		fmt.Println("The number", value, "is odd") // The number 13 is odd
 	}
+
 	// if condition1 {
 
 	// } else if condition2 {
@@ -39,11 +40,11 @@ func main() {
 	var color string
 	fmt.Scan(&color)
 	if strings.Compare(color, "green") == 0 {
-		fmt.Println("Color is green")
+		fmt.Println("Color is green") // Color is green
 	} else if strings.Compare(color, "red") == 0 {
-		fmt.Println("Color is red")
+		fmt.Println("Color is red") // Color is red
 	} else {
-		fmt.Println("Unknown color")
+		fmt.Println("Unknown color") // scan- blue // Unknown color
 	}
 
 	//Good Инициализация в блоке условного оператора
@@ -68,18 +69,18 @@ func main() {
 	*/
 
 	//НЕ ИДЕОМАТИЧНО
-	if width := 100; width > 100 {
-		fmt.Println("Width > 100")
-	} else {
-		fmt.Println("Width <= 100")
-	}
+	// if width := 100; width > 100 {
+	// 	fmt.Println("Width > 100")
+	// } else {
+	// 	fmt.Println("Width <= 100")
+	// }
 	//Странное правило номер 1: в Go стараются избегать блоков ELSE
 
 	//Идеоматичность
-	if height := 100; height > 100 {
-		fmt.Println("height > 100")
-		return
-	}
-	fmt.Println("Height <= 100")
+	// if height := 100; height > 100 {
+	// 	fmt.Println("height > 100")
+	// 	return
+	// }                          // Внимание: return - выходит из фун. main()
+	// fmt.Println("Height <= 100")
 
 }
